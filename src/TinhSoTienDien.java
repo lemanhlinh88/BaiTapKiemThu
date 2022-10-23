@@ -6,8 +6,6 @@ public class TinhSoTienDien {
     }
 
     public int soTienDien(int sodien) {
-        int tongsotien = 0;
-
         if(sodien < 50)
             return sodien * 1678;
         if(sodien < 100)
@@ -21,6 +19,6 @@ public class TinhSoTienDien {
         if(sodien < 400)
             return 50 * 1678 + 50 * 1734 + 100 * 2014 + 100 * 2536 + 100 * 2834 + (sodien - 400) * 2927;
 
-        return tongsotien;
+        return 0;
     }
 }
